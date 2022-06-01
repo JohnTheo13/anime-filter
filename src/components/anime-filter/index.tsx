@@ -18,7 +18,10 @@ const AnimeFilter = () => {
     const text = e.target.value.trim()
     if (text.length > 0) {
       const matching = regex(text);
-        // mocking an API that would return filtered results
+      /**
+       *  mocking an API that would return filtered results
+       * debounce method
+       */
       timer = setTimeout(async () => {
         try {
           const res = await getAnime();
