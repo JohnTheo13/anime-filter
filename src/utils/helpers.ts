@@ -1,0 +1,1 @@
+export const regex =  (text:string) => new RegExp(text, "gi")
