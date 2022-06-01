@@ -47,8 +47,8 @@ Answers
 6. React.memo / connect (redux) / some costum HOC
     Higher Order Components are used for passing additional properties to the Component they are wrapping
     A usecase would be a dropdown with a HOC that is controling the hover state of the list items
-7. 
-8. 
-9. 
+7. Promises expose the reject function from where we can handle exceptions, while in callbacks we need to do it ourselves a "reject like method", async ... await we need to wrap await in a try...catch and handle the exception in the catch section. 
+8. setState is from class components recieves state and props and returns the updated state, it's not async but we could "make it" if if wait for an API response before updating the state 
+9. I don't know concrete steps, I just change the class to a function(Component) this.state if exist to state with useState or useReducer and if needed I add useEffect or any other hook(including custom ones) that will make my refactored Component to behave the same way as before 
 10. Inline styles (old school), csss in js, styled-components, csss modules
 11. We can use the dangerouslySetInnerHTML like I did in the list item, but if its coming from an API we should use some kind of sanitizer to prevent scrinpt injection
